@@ -36,7 +36,7 @@ This README would normally document whatever steps are necessary to get your app
 
 ### Who do I talk to?
 
-- Repo created by DanaQueue
+- Repo created by TuanGYMIT
 - Other community or team contact:
 
   - I PFIEV - Fast faculty of University of Science and Technology - The University of Da Nang

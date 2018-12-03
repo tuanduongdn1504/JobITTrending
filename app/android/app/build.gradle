@@ -129,7 +129,7 @@ android {
 //        javaMaxHeapSize "4g"
 //    }
     defaultConfig {
-        applicationId "com.danaqueue"
+        applicationId "com.jobittrending"
         minSdkVersion 21
         targetSdkVersion  26
         versionCode 1

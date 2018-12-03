@@ -12,7 +12,7 @@
 		00C302E81ABCBA2D00DB3ED1 /* libRCTImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302C01ABCB91800DB3ED1 /* libRCTImage.a */; };
 		00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */; };
 		00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */; };
-		00E356F31AD99517003FC87E /* DanaQueueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* DanaQueueTests.m */; };
+		00E356F31AD99517003FC87E /* JobITTrendingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* JobITTrendingTests.m */; };
 		087D29CF21B1AFA300456DED /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		08BD71BD21ABF57D00292177 /* dana-queue.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 08BD71BC21ABF57C00292177 /* dana-queue.ttf */; };
 		11D1A2F320CAFA9E000508D9 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
@@ -37,9 +37,9 @@
 		2D02E4C61E0B4AEC006451C7 /* libRCTSettings-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E901DF850E9000B6D8A /* libRCTSettings-tvOS.a */; };
 		2D02E4C71E0B4AEC006451C7 /* libRCTText-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E941DF850E9000B6D8A /* libRCTText-tvOS.a */; };
 		2D02E4C81E0B4AEC006451C7 /* libRCTWebSocket-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E991DF850E9000B6D8A /* libRCTWebSocket-tvOS.a */; };
-		2DCD954D1E0B4F2C00145EB5 /* DanaQueueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* DanaQueueTests.m */; };
+		2DCD954D1E0B4F2C00145EB5 /* JobITTrendingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* JobITTrendingTests.m */; };
 		2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
-		2E0A344338AC2231766D91FE /* libPods-DanaQueue.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 613562F25130DF0007E2014D /* libPods-DanaQueue.a */; };
+		2E0A344338AC2231766D91FE /* libPods-JobITTrending.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 613562F25130DF0007E2014D /* libPods-JobITTrending.a */; };
 		35BBCF653EDF4257AA125E2A /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA9788DDC10949408D4540CF /* FontAwesome.ttf */; };
 		39477169B1F640B9ACE7432C /* libRNVectorIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3012DCB1B9CF437A8079EC77 /* libRNVectorIcons.a */; };
 		3A40C10D1DEB4C75BCBA7017 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0758D595295C427CB7DD9FF5 /* MaterialIcons.ttf */; };
@@ -118,7 +118,7 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = DanaQueue;
+			remoteInfo = JobITTrending;
 		};
 		139105C01AF99BAD00B5F7CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -153,7 +153,7 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
-			remoteInfo = "DanaQueue-tvOS";
+			remoteInfo = "JobITTrending-tvOS";
 		};
 		2D16E6711FA4F8DC00B85C8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -529,9 +529,9 @@
 		00C302D31ABCB9D200DB3ED1 /* RCTNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTNetwork.xcodeproj; path = "../node_modules/react-native/Libraries/Network/RCTNetwork.xcodeproj"; sourceTree = "<group>"; };
 		00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTVibration.xcodeproj; path = "../node_modules/react-native/Libraries/Vibration/RCTVibration.xcodeproj"; sourceTree = "<group>"; };
 		00D639B7507143B2A36B6647 /* ReactNativeConfig.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = ReactNativeConfig.xcodeproj; path = "../node_modules/react-native-config/ios/ReactNativeConfig.xcodeproj"; sourceTree = "<group>"; };
-		00E356EE1AD99517003FC87E /* DanaQueueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DanaQueueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* JobITTrendingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JobITTrendingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* DanaQueueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DanaQueueTests.m; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* JobITTrendingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobITTrendingTests.m; sourceTree = "<group>"; };
 		03525796D4224E309CD6EE27 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 		0758D595295C427CB7DD9FF5 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
 		08BD71BC21ABF57C00292177 /* dana-queue.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dana-queue.ttf"; sourceTree = "<group>"; };
@@ -540,29 +540,29 @@
 		0CF2766E5BEE4201A3EC51D6 /* CodePush.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = CodePush.xcodeproj; path = "../node_modules/react-native-code-push/ios/CodePush.xcodeproj"; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* DanaQueue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DanaQueue.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = DanaQueue/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = DanaQueue/AppDelegate.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* JobITTrending.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JobITTrending.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = JobITTrending/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = JobITTrending/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = DanaQueue/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = DanaQueue/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = DanaQueue/main.m; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = JobITTrending/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = JobITTrending/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = JobITTrending/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		1825354A21AD9A2800309084 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		182FF4C1F2C3CD1200CAE596 /* Pods-DanaQueue.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DanaQueue.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DanaQueue/Pods-DanaQueue.debug.xcconfig"; sourceTree = "<group>"; };
-		2BB95E3D96A0FA41E6D26779 /* Pods-DanaQueueTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DanaQueueTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DanaQueueTests/Pods-DanaQueueTests.debug.xcconfig"; sourceTree = "<group>"; };
-		2D02E47B1E0B4A5D006451C7 /* DanaQueue-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DanaQueue-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D02E4901E0B4A5D006451C7 /* DanaQueue-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DanaQueue-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		182FF4C1F2C3CD1200CAE596 /* Pods-JobITTrending.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobITTrending.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JobITTrending/Pods-JobITTrending.debug.xcconfig"; sourceTree = "<group>"; };
+		2BB95E3D96A0FA41E6D26779 /* Pods-JobITTrendingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobITTrendingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JobITTrendingTests/Pods-JobITTrendingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2D02E47B1E0B4A5D006451C7 /* JobITTrending-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JobITTrending-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E4901E0B4A5D006451C7 /* JobITTrending-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "JobITTrending-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3012DCB1B9CF437A8079EC77 /* libRNVectorIcons.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNVectorIcons.a; sourceTree = "<group>"; };
 		33BEF6B3ECDB4AD6B219D429 /* libRNDeviceInfo-tvOS.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = "libRNDeviceInfo-tvOS.a"; sourceTree = "<group>"; };
-		39A380390F9F77B06D990267 /* Pods-DanaQueueTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DanaQueueTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DanaQueueTests/Pods-DanaQueueTests.release.xcconfig"; sourceTree = "<group>"; };
+		39A380390F9F77B06D990267 /* Pods-JobITTrendingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobITTrendingTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JobITTrendingTests/Pods-JobITTrendingTests.release.xcconfig"; sourceTree = "<group>"; };
 		437AF051019D4C6F8705A5E4 /* RNVectorIcons.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNVectorIcons.xcodeproj; path = "../node_modules/react-native-vector-icons/RNVectorIcons.xcodeproj"; sourceTree = "<group>"; };
 		446C6F82941A409C8747EEC3 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
-		4A3E516EFC10C0EE28B6B6C9 /* Pods-DanaQueue.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DanaQueue.staging.xcconfig"; path = "Pods/Target Support Files/Pods-DanaQueue/Pods-DanaQueue.staging.xcconfig"; sourceTree = "<group>"; };
+		4A3E516EFC10C0EE28B6B6C9 /* Pods-JobITTrending.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobITTrending.staging.xcconfig"; path = "Pods/Target Support Files/Pods-JobITTrending/Pods-JobITTrending.staging.xcconfig"; sourceTree = "<group>"; };
 		517055EF97BA4349859DF167 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
 		56106B32937142F1A5773960 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
-		613562F25130DF0007E2014D /* libPods-DanaQueue.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DanaQueue.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		613562F25130DF0007E2014D /* libPods-JobITTrending.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JobITTrending.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7100CA0D21ADCF9200389FBA /* libFirebaseAuth.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libFirebaseAuth.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7100CA4A21ADCF9D00389FBA /* libFirebaseCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libFirebaseCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7100CA4C21ADCFA600389FBA /* libFirebaseFirestore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libFirebaseFirestore.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -583,10 +583,10 @@
 		9FCFA49D214D3D590045E00C /* Lottie.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Lottie.xcodeproj; path = "../node_modules/lottie-ios/Lottie.xcodeproj"; sourceTree = "<group>"; };
 		9FDDD39D21366C1800564532 /* RNI18n.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNI18n.xcodeproj; path = "../node_modules/react-native-i18n/ios/RNI18n.xcodeproj"; sourceTree = "<group>"; };
 		A896ACF6592B44DF9949DCCD /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
-		ACF96C04A7FEA5E93353C0A0 /* Pods-DanaQueue.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DanaQueue.release.xcconfig"; path = "Pods/Target Support Files/Pods-DanaQueue/Pods-DanaQueue.release.xcconfig"; sourceTree = "<group>"; };
+		ACF96C04A7FEA5E93353C0A0 /* Pods-JobITTrending.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobITTrending.release.xcconfig"; path = "Pods/Target Support Files/Pods-JobITTrending/Pods-JobITTrending.release.xcconfig"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		ADE3291B996D4CA0AEF45326 /* libReactNativeNavigation.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libReactNativeNavigation.a; sourceTree = "<group>"; };
-		B35BCCCF215A822100DB205E /* DanaQueue.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = DanaQueue.entitlements; path = DanaQueue/DanaQueue.entitlements; sourceTree = "<group>"; };
+		B35BCCCF215A822100DB205E /* JobITTrending.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = JobITTrending.entitlements; path = JobITTrending/JobITTrending.entitlements; sourceTree = "<group>"; };
 		B3C16E3E217B020300ADF948 /* ReactNativeNavigation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactNativeNavigation.xcodeproj; path = "../node_modules/react-native-navigation/lib/ios/ReactNativeNavigation.xcodeproj"; sourceTree = "<group>"; };
 		B3C16E48217B3DE600ADF948 /* RCTCameraRoll.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTCameraRoll.xcodeproj; path = "../node_modules/react-native/Libraries/CameraRoll/RCTCameraRoll.xcodeproj"; sourceTree = "<group>"; };
 		B3DE0717AF904D2D8B399401 /* RNDeviceInfo.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNDeviceInfo.xcodeproj; path = "../node_modules/react-native-device-info/ios/RNDeviceInfo.xcodeproj"; sourceTree = "<group>"; };
@@ -643,7 +643,7 @@
 				39477169B1F640B9ACE7432C /* libRNVectorIcons.a in Frameworks */,
 				9FDDD3D321366C2100564532 /* libRNI18n.a in Frameworks */,
 				9F127884214B4433000CE08A /* libBVLinearGradient.a in Frameworks */,
-				2E0A344338AC2231766D91FE /* libPods-DanaQueue.a in Frameworks */,
+				2E0A344338AC2231766D91FE /* libPods-JobITTrending.a in Frameworks */,
 				A128041C183041BE912495CE /* libRNFirebase.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -716,13 +716,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		00E356EF1AD99517003FC87E /* DanaQueueTests */ = {
+		00E356EF1AD99517003FC87E /* JobITTrendingTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* DanaQueueTests.m */,
+				00E356F21AD99517003FC87E /* JobITTrendingTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = DanaQueueTests;
+			path = JobITTrendingTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -753,11 +753,11 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* DanaQueue */ = {
+		13B07FAE1A68108700A75B9A /* JobITTrending */ = {
 			isa = PBXGroup;
 			children = (
 				1825354A21AD9A2800309084 /* GoogleService-Info.plist */,
-				B35BCCCF215A822100DB205E /* DanaQueue.entitlements */,
+				B35BCCCF215A822100DB205E /* JobITTrending.entitlements */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -766,7 +766,7 @@
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = DanaQueue;
+			name = JobITTrending;
 			sourceTree = "<group>";
 		};
 		146834001AC3E56700842450 /* Products */ = {
@@ -803,11 +803,11 @@
 		1D4C08BCDBDB4CFF3C3CF98C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				182FF4C1F2C3CD1200CAE596 /* Pods-DanaQueue.debug.xcconfig */,
-				ACF96C04A7FEA5E93353C0A0 /* Pods-DanaQueue.release.xcconfig */,
-				2BB95E3D96A0FA41E6D26779 /* Pods-DanaQueueTests.debug.xcconfig */,
-				39A380390F9F77B06D990267 /* Pods-DanaQueueTests.release.xcconfig */,
-				4A3E516EFC10C0EE28B6B6C9 /* Pods-DanaQueue.staging.xcconfig */,
+				182FF4C1F2C3CD1200CAE596 /* Pods-JobITTrending.debug.xcconfig */,
+				ACF96C04A7FEA5E93353C0A0 /* Pods-JobITTrending.release.xcconfig */,
+				2BB95E3D96A0FA41E6D26779 /* Pods-JobITTrendingTests.debug.xcconfig */,
+				39A380390F9F77B06D990267 /* Pods-JobITTrendingTests.release.xcconfig */,
+				4A3E516EFC10C0EE28B6B6C9 /* Pods-JobITTrending.staging.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -822,7 +822,7 @@
 				9F01D54A219EA884005EF96C /* Crashlytics.framework */,
 				9F01D54B219EA884005EF96C /* Fabric.framework */,
 				9BB60668F9194A228D1D893E /* libz.tbd */,
-				613562F25130DF0007E2014D /* libPods-DanaQueue.a */,
+				613562F25130DF0007E2014D /* libPods-JobITTrending.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -888,9 +888,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* DanaQueue */,
+				13B07FAE1A68108700A75B9A /* JobITTrending */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* DanaQueueTests */,
+				00E356EF1AD99517003FC87E /* JobITTrendingTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				E13D8C2C6AFF4B7BA3F51224 /* Resources */,
@@ -905,10 +905,10 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* DanaQueue.app */,
-				00E356EE1AD99517003FC87E /* DanaQueueTests.xctest */,
-				2D02E47B1E0B4A5D006451C7 /* DanaQueue-tvOS.app */,
-				2D02E4901E0B4A5D006451C7 /* DanaQueue-tvOSTests.xctest */,
+				13B07F961A680F5B00A75B9A /* JobITTrending.app */,
+				00E356EE1AD99517003FC87E /* JobITTrendingTests.xctest */,
+				2D02E47B1E0B4A5D006451C7 /* JobITTrending-tvOS.app */,
+				2D02E4901E0B4A5D006451C7 /* JobITTrending-tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1059,9 +1059,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* DanaQueueTests */ = {
+		00E356ED1AD99517003FC87E /* JobITTrendingTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "DanaQueueTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "JobITTrendingTests" */;
 			buildPhases = (
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
@@ -1072,14 +1072,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = DanaQueueTests;
-			productName = DanaQueueTests;
-			productReference = 00E356EE1AD99517003FC87E /* DanaQueueTests.xctest */;
+			name = JobITTrendingTests;
+			productName = JobITTrendingTests;
+			productReference = 00E356EE1AD99517003FC87E /* JobITTrendingTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* DanaQueue */ = {
+		13B07F861A680F5B00A75B9A /* JobITTrending */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "DanaQueue" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "JobITTrending" */;
 			buildPhases = (
 				E93895FD38940EB5EE959EC1 /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
@@ -1095,14 +1095,14 @@
 			dependencies = (
 				9FCFA4B1214D3D7D0045E00C /* PBXTargetDependency */,
 			);
-			name = DanaQueue;
+			name = JobITTrending;
 			productName = "Hello World";
-			productReference = 13B07F961A680F5B00A75B9A /* DanaQueue.app */;
+			productReference = 13B07F961A680F5B00A75B9A /* JobITTrending.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E47A1E0B4A5D006451C7 /* DanaQueue-tvOS */ = {
+		2D02E47A1E0B4A5D006451C7 /* JobITTrending-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "DanaQueue-tvOS" */;
+			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "JobITTrending-tvOS" */;
 			buildPhases = (
 				2D02E4771E0B4A5D006451C7 /* Sources */,
 				2D02E4781E0B4A5D006451C7 /* Frameworks */,
@@ -1113,14 +1113,14 @@
 			);
 			dependencies = (
 			);
-			name = "DanaQueue-tvOS";
-			productName = "DanaQueue-tvOS";
-			productReference = 2D02E47B1E0B4A5D006451C7 /* DanaQueue-tvOS.app */;
+			name = "JobITTrending-tvOS";
+			productName = "JobITTrending-tvOS";
+			productReference = 2D02E47B1E0B4A5D006451C7 /* JobITTrending-tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E48F1E0B4A5D006451C7 /* DanaQueue-tvOSTests */ = {
+		2D02E48F1E0B4A5D006451C7 /* JobITTrending-tvOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "DanaQueue-tvOSTests" */;
+			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "JobITTrending-tvOSTests" */;
 			buildPhases = (
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
@@ -1131,9 +1131,9 @@
 			dependencies = (
 				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
 			);
-			name = "DanaQueue-tvOSTests";
-			productName = "DanaQueue-tvOSTests";
-			productReference = 2D02E4901E0B4A5D006451C7 /* DanaQueue-tvOSTests.xctest */;
+			name = "JobITTrending-tvOSTests";
+			productName = "JobITTrending-tvOSTests";
+			productReference = 2D02E4901E0B4A5D006451C7 /* JobITTrending-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -1178,7 +1178,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "DanaQueue" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "JobITTrending" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -1289,10 +1289,10 @@
 			);
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* DanaQueue */,
-				00E356ED1AD99517003FC87E /* DanaQueueTests */,
-				2D02E47A1E0B4A5D006451C7 /* DanaQueue-tvOS */,
-				2D02E48F1E0B4A5D006451C7 /* DanaQueue-tvOSTests */,
+				13B07F861A680F5B00A75B9A /* JobITTrending */,
+				00E356ED1AD99517003FC87E /* JobITTrendingTests */,
+				2D02E47A1E0B4A5D006451C7 /* JobITTrending-tvOS */,
+				2D02E48F1E0B4A5D006451C7 /* JobITTrending-tvOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -1791,7 +1791,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-DanaQueue/Pods-DanaQueue-resources.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-JobITTrending/Pods-JobITTrending-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/gRPC/gRPCCertificates.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -1800,7 +1800,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DanaQueue/Pods-DanaQueue-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JobITTrending/Pods-JobITTrending-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9F01D4FA219EA7CB005EF96C /* ShellScript */ = {
@@ -1827,7 +1827,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DanaQueue-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-JobITTrending-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1841,7 +1841,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* DanaQueueTests.m in Sources */,
+				00E356F31AD99517003FC87E /* JobITTrendingTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1866,7 +1866,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DCD954D1E0B4F2C00145EB5 /* DanaQueueTests.m in Sources */,
+				2DCD954D1E0B4F2C00145EB5 /* JobITTrendingTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1875,12 +1875,12 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* DanaQueue */;
+			target = 13B07F861A680F5B00A75B9A /* JobITTrending */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D02E47A1E0B4A5D006451C7 /* DanaQueue-tvOS */;
+			target = 2D02E47A1E0B4A5D006451C7 /* JobITTrending-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
 		9FCFA4B1214D3D7D0045E00C /* PBXTargetDependency */ = {
@@ -1897,7 +1897,7 @@
 				13B07FB21A68108700A75B9A /* Base */,
 			);
 			name = LaunchScreen.xib;
-			path = DanaQueue;
+			path = JobITTrending;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1921,7 +1921,7 @@
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 				);
-				INFOPLIST_FILE = DanaQueueTests/Info.plist;
+				INFOPLIST_FILE = JobITTrendingTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -1935,7 +1935,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DanaQueue.app/DanaQueue";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JobITTrending.app/JobITTrending";
 			};
 			name = Debug;
 		};
@@ -1954,7 +1954,7 @@
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 				);
-				INFOPLIST_FILE = DanaQueueTests/Info.plist;
+				INFOPLIST_FILE = JobITTrendingTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -1968,17 +1968,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DanaQueue.app/DanaQueue";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JobITTrending.app/JobITTrending";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 182FF4C1F2C3CD1200CAE596 /* Pods-DanaQueue.debug.xcconfig */;
+			baseConfigurationReference = 182FF4C1F2C3CD1200CAE596 /* Pods-JobITTrending.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_ENTITLEMENTS = DanaQueue/DanaQueue.entitlements;
+				CODE_SIGN_ENTITLEMENTS = JobITTrending/JobITTrending.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -2007,7 +2007,7 @@
 					"$(SRCROOT)/../node_modules/react-native-onesignal/ios/RCTOneSignal",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 				);
-				INFOPLIST_FILE = DanaQueue/Info.plist;
+				INFOPLIST_FILE = JobITTrending/Info.plist;
 				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "-traditional";
 				INFOPLIST_PREFIX_HEADER = "${BUILD_DIR}/GeneratedInfoPlistDotEnv.h";
 				INFOPLIST_PREPROCESS = YES;
@@ -2019,7 +2019,7 @@
 					"$(inherited)",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.danaqueue;
-				PRODUCT_NAME = DanaQueue;
+				PRODUCT_NAME = JobITTrending;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -2027,11 +2027,11 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ACF96C04A7FEA5E93353C0A0 /* Pods-DanaQueue.release.xcconfig */;
+			baseConfigurationReference = ACF96C04A7FEA5E93353C0A0 /* Pods-JobITTrending.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_ENTITLEMENTS = DanaQueue/DanaQueue.entitlements;
+				CODE_SIGN_ENTITLEMENTS = JobITTrending/JobITTrending.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -2059,7 +2059,7 @@
 					"$(SRCROOT)/../node_modules/react-native-onesignal/ios/RCTOneSignal",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 				);
-				INFOPLIST_FILE = DanaQueue/Info.plist;
+				INFOPLIST_FILE = JobITTrending/Info.plist;
 				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "-traditional";
 				INFOPLIST_PREFIX_HEADER = "${BUILD_DIR}/GeneratedInfoPlistDotEnv.h";
 				INFOPLIST_PREPROCESS = YES;
@@ -2071,7 +2071,7 @@
 					"$(inherited)",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.danaqueue;
-				PRODUCT_NAME = DanaQueue;
+				PRODUCT_NAME = JobITTrending;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -2099,7 +2099,7 @@
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 				);
-				INFOPLIST_FILE = "DanaQueue-tvOS/Info.plist";
+				INFOPLIST_FILE = "JobITTrending-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2109,7 +2109,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.DanaQueue-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.JobITTrending-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -2139,7 +2139,7 @@
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 				);
-				INFOPLIST_FILE = "DanaQueue-tvOS/Info.plist";
+				INFOPLIST_FILE = "JobITTrending-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2149,7 +2149,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.DanaQueue-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.JobITTrending-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -2178,7 +2178,7 @@
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 				);
-				INFOPLIST_FILE = "DanaQueue-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "JobITTrending-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2188,10 +2188,10 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.DanaQueue-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.JobITTrending-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DanaQueue-tvOS.app/DanaQueue-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JobITTrending-tvOS.app/JobITTrending-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Debug;
@@ -2217,7 +2217,7 @@
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 				);
-				INFOPLIST_FILE = "DanaQueue-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "JobITTrending-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2227,10 +2227,10 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.DanaQueue-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.JobITTrending-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DanaQueue-tvOS.app/DanaQueue-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JobITTrending-tvOS.app/JobITTrending-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Release;
@@ -2252,7 +2252,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 				);
-				INFOPLIST_FILE = "DanaQueue-tvOS/Info.plist";
+				INFOPLIST_FILE = "JobITTrending-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2262,7 +2262,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.DanaQueue-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.JobITTrending-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -2272,7 +2272,7 @@
 		};
 		47ADCF32DD8A4F6A9D51FDAF /* Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A3E516EFC10C0EE28B6B6C9 /* Pods-DanaQueue.staging.xcconfig */;
+			baseConfigurationReference = 4A3E516EFC10C0EE28B6B6C9 /* Pods-JobITTrending.staging.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -2286,7 +2286,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 				);
-				INFOPLIST_FILE = DanaQueue/Info.plist;
+				INFOPLIST_FILE = JobITTrending/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -2295,7 +2295,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.danaqueue;
-				PRODUCT_NAME = DanaQueue;
+				PRODUCT_NAME = JobITTrending;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Staging;
@@ -2316,7 +2316,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 				);
-				INFOPLIST_FILE = "DanaQueue-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "JobITTrending-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2326,10 +2326,10 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.DanaQueue-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.JobITTrending-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DanaQueue-tvOS.app/DanaQueue-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JobITTrending-tvOS.app/JobITTrending-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Staging;
@@ -2447,7 +2447,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 				);
-				INFOPLIST_FILE = DanaQueueTests/Info.plist;
+				INFOPLIST_FILE = JobITTrendingTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -2460,7 +2460,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DanaQueue.app/DanaQueue";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JobITTrending.app/JobITTrending";
 			};
 			name = Staging;
 		};
@@ -2513,7 +2513,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "DanaQueueTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "JobITTrendingTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -2523,7 +2523,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "DanaQueue" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "JobITTrending" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -2533,7 +2533,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "DanaQueue-tvOS" */ = {
+		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "JobITTrending-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4971E0B4A5E006451C7 /* Debug */,
@@ -2543,7 +2543,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "DanaQueue-tvOSTests" */ = {
+		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "JobITTrending-tvOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4991E0B4A5E006451C7 /* Debug */,
@@ -2553,7 +2553,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "DanaQueue" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "JobITTrending" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

@@ -1,6 +1,6 @@
 <resources>
     <string moduleConfig="true" name="reactNativeCodePush_androidDeploymentKey">n</string>
-    <string name="app_name">DanaQueue</string>
+    <string name="app_name">JobITTrending</string>
     <string name="google_maps_key"  translatable="false" templateMergeStrategy="preserve">AIzaSyB1A8FbqoXQ_ePJk0Fp9OjuJSeL8u_zmAE</string>
 </resources>
 

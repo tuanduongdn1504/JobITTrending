@@ -1,4 +1,4 @@
-package com.danaqueue;
+package com.jobittrending;
 
 import android.content.Intent;
 

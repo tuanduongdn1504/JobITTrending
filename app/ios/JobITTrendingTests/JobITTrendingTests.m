@@ -14,11 +14,11 @@
 #define TIMEOUT_SECONDS 600
 #define TEXT_TO_LOOK_FOR @"Welcome to React Native!"
 
-@interface DanaQueueTests : XCTestCase
+@interface JobITTrendingTests : XCTestCase
 
 @end
 
-@implementation DanaQueueTests
+@implementation JobITTrendingTests
 
 - (BOOL)findSubviewInView:(UIView *)view matching:(BOOL(^)(UIView *view))test
 {

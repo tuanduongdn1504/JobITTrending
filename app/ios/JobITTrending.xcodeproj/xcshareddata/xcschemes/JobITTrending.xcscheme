@@ -52,9 +52,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "DanaQueue.app"
-               BlueprintName = "DanaQueue"
-               ReferencedContainer = "container:DanaQueue.xcodeproj">
+               BuildableName = "JobITTrending.app"
+               BlueprintName = "JobITTrending"
+               ReferencedContainer = "container:JobITTrending.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -66,9 +66,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "DanaQueueTests.xctest"
-               BlueprintName = "DanaQueueTests"
-               ReferencedContainer = "container:DanaQueue.xcodeproj">
+               BuildableName = "JobITTrendingTests.xctest"
+               BlueprintName = "JobITTrendingTests"
+               ReferencedContainer = "container:JobITTrending.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -84,9 +84,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "DanaQueueTests.xctest"
-               BlueprintName = "DanaQueueTests"
-               ReferencedContainer = "container:DanaQueue.xcodeproj">
+               BuildableName = "JobITTrendingTests.xctest"
+               BlueprintName = "JobITTrendingTests"
+               ReferencedContainer = "container:JobITTrending.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "DanaQueue.app"
-            BlueprintName = "DanaQueue"
-            ReferencedContainer = "container:DanaQueue.xcodeproj">
+            BuildableName = "JobITTrending.app"
+            BlueprintName = "JobITTrending"
+            ReferencedContainer = "container:JobITTrending.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -117,9 +117,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "DanaQueue.app"
-            BlueprintName = "DanaQueue"
-            ReferencedContainer = "container:DanaQueue.xcodeproj">
+            BuildableName = "JobITTrending.app"
+            BlueprintName = "JobITTrending"
+            ReferencedContainer = "container:JobITTrending.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <EnvironmentVariables>
@@ -143,9 +143,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "DanaQueue.app"
-            BlueprintName = "DanaQueue"
-            ReferencedContainer = "container:DanaQueue.xcodeproj">
+            BuildableName = "JobITTrending.app"
+            BlueprintName = "JobITTrending"
+            ReferencedContainer = "container:JobITTrending.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
