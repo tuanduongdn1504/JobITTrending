@@ -1,0 +1,172 @@
+{
+  "appName": "DanaQueue",
+  "appDescription": "Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang phục vụ cho in ấn. Lorem Ipsum đã được sử dụng như một văn bản chuẩn cho ngành công nghiệp in ấn từ những năm 1500, khi một họa sĩ vô danh ghép nhiều đoạn văn bản với nhau để tạo thành một bản mẫu văn bản. Đoạn văn bản này không những đã tồn tại năm thế kỉ, mà khi được áp dụng vào tin học văn phòng, nội dung của nó vẫn không hề bị thay đổi. Nó đã được phổ biến trong những năm 1960 nhờ việc bán những bản giấy Letraset in những đoạn Lorem Ipsum, và gần đây hơn, được sử dụng trong các ứng dụng dàn trang, như Aldus PageMaker.",
+  "devBy": "Develop by DreamTeam",
+  "about": "About",
+  "username": "TÊN ĐĂNG NHẬP",
+  "password": "MẬT KHẨU",
+  "repeatPassword": "NHẬP LẠI MẬT KHẨU",
+  "signIn": "ĐĂNG NHẬP",
+  "connectFB": "ĐĂNG NHẬP BẰNG FACEBOOK",
+  "dontHavePassword": "Không có tài khoản? ",
+  "signUp": "ĐĂNG KÝ",
+  "footerLoginDescription": "By join IoT manager, you can easily handle your application",
+  "send": "GỞI",
+  "userInfo": {
+    "name": "Họ & Tên",
+    "namePlaceholder": "Nhập họ và tên của bạn",
+    "firstName": "Tên",
+    "firstNamePlaceholder": "Nhập tên của bạn",
+    "phone": "SỐ ĐIỆN THOẠI",
+    "phonePlaceholder": "Nhập Số điện thoại của bạn",
+    "address": "Địa chỉ",
+    "addressPlaceholder": "Nhập địa chỉ của bạn",
+    "birthday": "NGÀY SINH",
+    "homeTown": "QUÊ QUÁN",
+    "homeTownPlaceholder": "Nhập quê quán của bạn",
+    "signupPrivacy": "Tôi đồng ý với tất cả điều khoản tại đây",
+    "contact": "Thông tin liên hệ",
+    "password": "MẬT KHẨU",
+    "passwordPlaceholder": "Nhập mật khẩu của bạn",
+    "email": "EMAIL",
+    "emailPlaceholder": "Nhập Email của bạn",
+    "sex": "GIỚI TÍNH",
+    "sexPlaceholder": "Chọn giới tính",
+    "homeTownPlaceholder": "Enter your Home Town",
+    "signupPrivacy": "I have read and agree to the Terms and Conditions and Privacy Policy",
+    "register": "Register",
+    "zipCode": "Zip Code",
+    "selectRole": "What are you?",
+    "password": {
+      "title": "MẬT KHẨU",
+      "placeholder": "Enter your Password",
+      "forgotPassword": "Forgot password?",
+      "resetPassword": "Reset Password",
+      "newPassword": "New password",
+      "confirmPassword": "Confirm password",
+      "forgotPasswordCaption": "Enter email address you used when joined.",
+      "forgotPasswordDescription": "We will email you a link to reset your password.",
+      "verifyPassword": "Verify password",
+      "verifyPasswordCaption": "The verification code has been sent to your email.",
+      "verifyPasswordDescription": "Please enter that code to reset your password."
+    }
+  },
+  "resend": "Resend a new code",
+  "olds": "olds",
+  "register": "Register",
+  "profile": "Profile",
+  "inputOTP": "Nhập mã OTP",
+  "inputOTPDes": "Nhập mã nhận được từ SMS tại đây.",
+  "resend": "gởi lại mã mới",
+  "submit": "gởi",
+  "olds": "tuổi",
+  "busy": "Bận",
+  "free": "Chưa có người đặt",
+  "register": "Đăng ký",
+  "moreText": {
+    "updateLocation": "Update location",
+    "privacy": "Privacy policy",
+    "termOfService": "Term of service",
+    "logout": "Logout",
+    "unknow": "Unknow",
+    "setting": "Settings",
+    "shareToFriend": "Chia sẻ cho bạn bè",
+    "rateForUs": "Đánh giá chúng tôi",
+    "termsAndService": "Điều khoản dịch vụ",
+    "aboutUs": "Về chúng tôi",
+    "logout": "Đăng xuất"
+  },
+  "menu": {},
+  "notification": {
+    "title": "Notification",
+    "detailTitle": "Notification Detail",
+    "empty": "No notifications"
+  },
+  "share": "Share",
+  "home": {
+    "title": "Home"
+  },
+  "intro": {
+    "introTitle1": "Xếp hàng thông minh",
+    "introDes1": "Find tutor near you",
+    "introTitle2": "Đặt lịch nhanh chóng",
+    "introDes2": "You will instantly get paired with a professional tutor",
+    "introTitle3": "Tra cứu dễ dàng",
+    "introDes3": "You can choose your tutor\nand schedule an apointment",
+    "introTitle4": "Become a tutor",
+    "introDes4": "You can experience the joy of making a difference by becoming a tutor",
+    "haveAccount": "Already have an account?",
+    "createAccount": "Tạo tài khoản",
+    "orLoginWithEmail": "Or login with your email",
+    "dontHaveAccount": "Don't have account?",
+    "signUp": "Sign Up",
+    "login": "Login",
+    "appDes": "Find tutor near you",
+    "forgotPass": "Forgot password?"
+  },
+  "confirm": "Confirm",
+  "auth": {
+    "termsAndPrivacy": "By tapping Sign up, I agree to Tutor's\n",
+    "privacy": "Privacy Policy",
+    "terms": "Term of Services",
+    "and": "and"
+  },
+  "screens": {
+    "editProfile": "Cập nhật thông tin cá nhân",
+    "inputProfile": "Điền thông tin cá nhân",
+    "numberOfSlot": "Số người giao dịch",
+    "notification": "Thông báo",
+    "bookingAppointment": "Nhập nội dung lịch hẹn",
+    "area": "Khu vực",
+    "department": "Phòng ban cần đặt lịch",
+    "inputReason": "Nhập nội dung hẹn gặp",
+    "exampleReason": "Ví dụ: Cần hỗ trợ làm thủ tục nhà đất",
+    "selectedDate": "Chọn ngày hẹn",
+    "selectedTime": "Chọn giờ hẹn",
+    "appointmentContent": "Nội dung lịch hẹn",
+    "organization": "Đơn vị hẹn gặp",
+    "time": "Thời gian"
+  },
+  "undefined": {
+    "mean": "Chưa rõ",
+    "message": {
+      "verification": "Một mã PIN 6 chữ số vừa được gởi đến số điện thoại (+84) {{phone}}"
+    }
+  },
+  "error": {
+    "login": "Sai mật khẩu hoặc số điện thoại.",
+    "signup": "{{message}} đã tồn tại.",
+    "password": "The password has more than 6 characters",
+    "email": "This email is invalid format.",
+    "passwordMismatch": " Your password and confirm password do not match.",
+    "somethingWentWrong": "Something went wrong."
+  },
+  "success": {
+    "addPatient": "Thêm người bệnh thành công!",
+    "addAppointment": "Thêm lịch khám thành công!",
+    "editUser": "Thay đổi thông tin thành công!",
+    "send": "Gởi thành công",
+    "booking": "Đặt thành công",
+    "message": {
+      "booking": "Lịch hẹn của bạn đã được đặt, bạn có thể xem lại thông tin ở mục Lịch sử.",
+      "queue": "Thời gian hẹn gặp cụ thể sẽ được cơ quan đặt lịch thông báo qua SMS và email bạn đã đăng ký.",
+      "editUser": "Bạn có thể đặt lịch hẹn gặp ngay từ bây giờ mà không cần nhập lại thông tin cá nhân."
+    }
+  },
+  "button": {
+    "confirm": "Xác nhận",
+    "next": "Tiếp tục",
+    "add": "Add",
+    "submit": "Gởi yêu cầu",
+    "cancel": "Cancel",
+    "reset": "Reset",
+    "search": "Tra cứu",
+    "save": "Save",
+    "goHistory": "Đến trang \n\"Lịch sử\"",
+    "goQueue": "Đến trang \n\"Đăng kí nhanh\"",
+    "goBooking": "Đến trang \n\"Đặt lịch hẹn\""
+  },
+  "empty": {
+    "unselect": "Don't have the subjects you search"
+  }
+}

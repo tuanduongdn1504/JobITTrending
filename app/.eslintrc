@@ -1,0 +1,48 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["airbnb"],
+  "env": {
+    "browser": true
+  },
+  "plugins": ["react", "react-native", "jsx-a11y"],
+  "globals": {
+    "describe": true,
+    "it": true,
+    "expect": true,
+    "fetch": true,
+    "navigator": true,
+    "__DEV__": true,
+    "XMLHttpRequest": true,
+    "FormData": true
+  },
+  "rules": {
+    "jsx-a11y/img-has-alt": "off",
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "no-use-before-define": 0,
+    "react/forbid-prop-types": 0,
+    "react/require-default-props": 0,
+    "arrow-body-style": 0,
+    "arrow-parens": ["error", "as-needed"],
+    "func-names": ["error", "never"],
+    "import/prefer-default-export": 0,
+    "class-methods-use-this": 0,
+    "space-before-function-paren": [
+      "error",
+      { "anonymous": "never", "named": "never", "asyncArrow": "never" }
+    ],
+    "no-throw-literal": 0,
+    "no-undef": 0,
+    "no-confusing-arrow": 0,
+    "indent": 0,
+    "no-console": 0,
+    "no-mixed-operators": [
+      "error",
+      { "groups": [["&", "|", "^", "~", "<<", ">>", ">>>"], ["&&", "||"]] }
+    ],
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+    "no-unused-expressions": [
+      "error",
+      { "allowShortCircuit": true, "allowTernary": true }
+    ]
+  }
+}

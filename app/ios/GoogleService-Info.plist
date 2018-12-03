@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>262161927509-brgtfhkfoaomdfbhb77ug07ts3eu41ju.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.262161927509-brgtfhkfoaomdfbhb77ug07ts3eu41ju</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAJQKBSuGTqTTr7prcbo5DC-e00FeeJfxk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>262161927509</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.danaqueue</string>
+	<key>PROJECT_ID</key>
+	<string>danaqueue-7bf6d</string>
+	<key>STORAGE_BUCKET</key>
+	<string>danaqueue-7bf6d.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:262161927509:ios:5fbdbc636793efe2</string>
+	<key>DATABASE_URL</key>
+	<string>https://danaqueue-7bf6d.firebaseio.com</string>
+</dict>
+</plist>
