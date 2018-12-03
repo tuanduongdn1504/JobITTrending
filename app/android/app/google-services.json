@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "262161927509",
+    "firebase_url": "https://danaqueue-7bf6d.firebaseio.com",
+    "project_id": "danaqueue-7bf6d",
+    "storage_bucket": "danaqueue-7bf6d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:262161927509:android:5fbdbc636793efe2",
+        "android_client_info": {
+          "package_name": "com.danaqueue"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "262161927509-k6bv6nbtb0131jbi1g891jfsqj6hl73n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7MZ37P6S_xNh9Bh8yB5nVC2CunW_GqOE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
