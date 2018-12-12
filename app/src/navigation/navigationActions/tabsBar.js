@@ -75,7 +75,7 @@ export const startWithTabs = () => {
           drawBehind: true,
           // noBorder: true,
           title: {
-            text: 'THÔNG TIN LỊCH ĐẶT',
+            text: 'GENERALS',
             color: '#FF671B',
             fontSize: 20
           }

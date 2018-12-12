@@ -7,8 +7,8 @@ import { Types } from './actions';
 
 export function* startup() {
   const { token } = yield select(state => state.login);
-  !token ? startStackScreen() : startWithTabs();
-  // startWithTabs();
+  // !token ? startStackScreen() : startWithTabs();
+  startWithTabs();
 }
 
 const appSagas = () => {

@@ -13,7 +13,7 @@ import {
   formatDurationTime
 } from '../../utils/textUtils';
 import { Colors, Metrics } from '../../themes';
-import { type } from '../../themes/Fonts';
+import { type, fontWeight } from '../../themes/Fonts';
 import Text from '../../components/Text';
 import Divider from '../../components/Divider';
 import { iconsMap } from '../../utils/appIcons';
@@ -42,8 +42,8 @@ class SearchBooking extends Component {
     super(props);
     Navigation.events().bindComponent(this);
     this.state = {
-      officeId: null,
-      number: null
+      average: 0,
+      highest: 0
     };
     this.numerical = React.createRef();
   }
@@ -52,20 +52,24 @@ class SearchBooking extends Component {
   }
 
   componentDidMount() {
-    this.props.getOffices();
-    this.props.getCurrentNumerical();
-    const officeId = 1;
-    this.props.getNewCurrentBookingFirebase(officeId);
+    // this.props.getOffices();
+    // this.props.getCurrentNumerical();
+    // const officeId = 1;
+    // this.props.getNewCurrentBookingFirebase(officeId);
   }
 
-  renderOffice = () => {
-    const { currentNumerical } = this.props;
+  renderAverageSalary = () => {
+    // const { currentNumerical } = this.props;
+    const { average } = this.state;
     return (
       <View style={styles.vInput}>
-        <Text style={[styles.placeholder]}>PHÒNG BAN ĐÃ ĐẶT LỊCH</Text>
+        <View style={styles.vAverage}>
+          <Text style={[styles.textAverage]}>AVERAGE SALARY</Text>
+        </View>
         <LinearGradient
           style={{
             height: 48,
+            width: width - 40,
             borderRadius: 4,
             alignItems: 'center',
             justifyContent: 'center',
@@ -77,55 +81,94 @@ class SearchBooking extends Component {
           locations={[0, 0.6]}
         >
           <Text type="button" style={{ textAlign: 'center', color: '#fff' }}>
-            {currentNumerical && currentNumerical.office.toUpperCase()}
+            {/* {currentNumerical && currentNumerical.office.toUpperCase()} */}
+            {`$ ${average}/per month`}
           </Text>
         </LinearGradient>
       </View>
     );
   };
 
-  renderNewestBookingInfo = () => {
-    const { currentNumerical, bookingDataNow } = this.props;
+  renderHighestSalary = () => {
+    // const { currentNumerical, bookingDataNow } = this.props;
+    const { highest } = this.state;
     return (
       <View style={styles.bookingInfoContainer}>
         <View style={styles.subContainer}>
           <Text style={styles.textTitleBooking} numberOfLines={2}>
-            {'SỐ THỨ TỰ \n BOOKING MỚI NHẤT'}
+            {'NGÔN NGỮ \n MỚI NHẤT'}
           </Text>
           <Text type="largeTitle" style={styles.subTextTitle}>
-            {bookingDataNow && bookingDataNow.numerical}
+            {/* {bookingDataNow && bookingDataNow.numerical} */}
+            Fluter 1.0
           </Text>
         </View>
         <View style={styles.bookingDivider} />
         <View style={styles.subContainer}>
           <Text style={styles.textTitleBooking} numberOfLines={2}>
-            {'THỜI GIAN DỰ KIẾN \n ĐẾN LƯỢT BẠN'}
+            {'HIGHEST \n SALARY'}
           </Text>
           <Text type="largeTitle" style={styles.subTextTitle}>
-            {formatDurationTime(
+            {/* {formatDurationTime(
               moment.duration(
                 moment(currentNumerical && currentNumerical.time).diff(
                   bookingDataNow && bookingDataNow.time
                 )
               )
-            )}
+            )} */}
+            {highest}$
           </Text>
         </View>
       </View>
     );
   };
 
-  renderRealTime = () => {
-    const { numericalRunning } = this.props;
+  renderTrendingJob = () => {
+    // const { numericalRunning } = this.props;
     return (
       <View style={styles.vButton}>
         <View style={{ alignItems: 'center' }}>
-          <Text style={[styles.vNumerical]}>SỐ THỨ TỰ ĐANG XỬ LÝ HIỆN TẠI</Text>
+          <Text style={[styles.vNumerical]}>Most hired job?</Text>
           <Text
             type="largeTitleBold"
             style={styles.numerical}
             color={Colors.primaryText}
-          >{`${numericalRunning}`}</Text>
+          >
+            {/* {`${numericalRunning}`} */}
+            PHP
+          </Text>
+          <Text
+            type="largeTitleBold"
+            style={styles.numerical}
+            color={Colors.primaryText}
+          >
+            {/* {`${numericalRunning}`} */}
+            React-Naive
+          </Text>
+          <Text
+            type="largeTitleBold"
+            style={styles.numerical}
+            color={Colors.primaryText}
+          >
+            {/* {`${numericalRunning}`} */}
+            AngularJS
+          </Text>
+          <Text
+            type="largeTitleBold"
+            style={styles.numerical}
+            color={Colors.primaryText}
+          >
+            {/* {`${numericalRunning}`} */}
+            NodeJs
+          </Text>
+          <Text
+            type="largeTitleBold"
+            style={styles.numerical}
+            color={Colors.primaryText}
+          >
+            {/* {`${numericalRunning}`} */}
+            VueJs
+          </Text>
         </View>
       </View>
     );
@@ -133,9 +176,9 @@ class SearchBooking extends Component {
   renderBody() {
     return (
       <View style={styles.body}>
-        {this.renderOffice()}
-        {this.renderNewestBookingInfo()}
-        {this.renderRealTime()}
+        {this.renderAverageSalary()}
+        {this.renderHighestSalary()}
+        {this.renderTrendingJob()}
       </View>
     );
   }
@@ -186,11 +229,15 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.secondaryGray,
     paddingTop: 10
   },
-  placeholder: {
+  vAverage: {
+    alignItems: 'center'
+  },
+  textAverage: {
     backgroundColor: 'transparent',
-    fontFamily: type.text,
-    fontSize: 14,
-    color: '#4a4a4a',
+    fontFamily: type.semiBold,
+    fontWeight: fontWeight.semibold,
+    fontSize: 20,
+    color: Colors.primaryText,
     marginTop: 15,
     paddingBottom: 7
   },
@@ -259,25 +306,25 @@ const styles = StyleSheet.create({
 
 function mapStateToProps(state) {
   return {
-    loginData: state.login.data,
-    offices: state.offices.officesData,
-    numericalRunning: state.booking.numericalRunning,
-    guessingTime: state.booking.guessingTime,
-    currentNumerical: state.booking.currentNumerical,
-    bookingDataNow: state.booking.bookingDataNow
+    // loginData: state.login.data,
+    // offices: state.offices.officesData,
+    // numericalRunning: state.booking.numericalRunning,
+    // guessingTime: state.booking.guessingTime,
+    // currentNumerical: state.booking.currentNumerical,
+    // bookingDataNow: state.booking.bookingDataNow
   };
 }
 
 const mapDispatchToProps = dispatch => {
   return {
-    signOut: () => dispatch(LoginActions.signOut()),
-    getOffices: () => dispatch(OfficeActions.getOffices()),
-    bookingSearch: data => dispatch(BookingActions.bookingSearch(data)),
-    getNewCurrentBookingFirebase: officeId =>
-      dispatch(BookingActions.getNewCurrentBooking(officeId)),
-    runningBookingNumerical: officeId =>
-      dispatch(BookingActions.runningBookingNumerical(officeId)),
-    getCurrentNumerical: () => dispatch(BookingActions.getCurrentNumerical())
+    signOut: () => dispatch(LoginActions.signOut())
+    // getOffices: () => dispatch(OfficeActions.getOffices()),
+    // bookingSearch: data => dispatch(BookingActions.bookingSearch(data)),
+    // getNewCurrentBookingFirebase: officeId =>
+    //   dispatch(BookingActions.getNewCurrentBooking(officeId)),
+    // runningBookingNumerical: officeId =>
+    //   dispatch(BookingActions.runningBookingNumerical(officeId)),
+    // getCurrentNumerical: () => dispatch(BookingActions.getCurrentNumerical())
   };
 };
 

@@ -42,8 +42,8 @@ This README would normally document whatever steps are necessary to get your app
   - I PFIEV - Fast faculty of University of Science and Technology - The University of Da Nang
     Website:
     Facebook: https://www.facebook.com/TuanGYMIT/
-    Instagram:
-    Linkedln: https://www.linkedin.com/in/tuan-duong-89a900153/
+    Instagram:https://www.instagram.com/danamax_storm/
+    LinkedIn: https://www.linkedin.com/in/tuan-duong-89a900153/
     GitRepos: https://gitlab.com/tuan.duong/
     ------or: https://github.com/tuanduongdn1504/
     mekongskills2work:

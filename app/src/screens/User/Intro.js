@@ -64,7 +64,8 @@ class Intro extends Component {
           startColor={Colors.primary}
           endColor={Colors.primary}
           style={styles.btnLogin}
-          onPress={this.signIn}
+          // onPress={this.signIn}
+          onPress={this.fbSignIn}
           iconColor={Colors.default}
           buttonTitle={I18n.t('signIn').toLocaleUpperCase()}
         />
