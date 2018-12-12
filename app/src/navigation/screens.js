@@ -15,7 +15,7 @@ import ResetPassword from '../screens/User/ResetPassword';
 import VerifyPassword from '../screens/User/VerifyPassword';
 // tabbar
 import Queue from '../screens/Queue';
-import SearchBooking from '../screens/SearchBooking';
+import Generals from '../screens/Generals';
 import SelectDepartment from '../screens/Queue/SelectDepartment';
 import Booking from '../screens/Booking';
 import BookingDetail from '../screens/Booking/BookingDetail';
@@ -120,8 +120,8 @@ export function registerScreens(store, persistor) {
     store
   );
   Navigation.registerComponentWithRedux(
-    'searchBooking',
-    () => SearchBooking,
+    'generals',
+    () => Generals,
     PersistProvider,
     store
   );

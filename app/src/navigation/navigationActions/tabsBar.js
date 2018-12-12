@@ -8,9 +8,33 @@ import { Images, Fonts } from '../../themes';
 export const startWithTabs = () => {
   const Tabs = [
     {
+      label: 'generals',
+      title: 'Generals',
+      icon: iconsMap['ic-quick-done'],
+      screen: 'generals',
+      options: {
+        ...navigatorStyle,
+        topBar: {
+          ...navigatorStyle.topBar,
+          visible: true,
+          drawBehind: true,
+          // noBorder: true,
+          title: {
+            text: 'GENERALS',
+            color: '#FF671B',
+            fontSize: 20
+          }
+        },
+        backButton: {
+          icon: iconsMap['ic-done'],
+          visible: true
+        }
+      }
+    },
+    {
       label: 'queue',
       title: 'Đăng kí nhanh',
-      icon: iconsMap['ic-quick-time'],
+      icon: iconsMap['ic-history'],
       screen: 'queue',
       options: {
         ...navigatorStyle,
@@ -63,33 +87,9 @@ export const startWithTabs = () => {
       }
     },
     {
-      label: 'search',
-      title: 'My Booking',
-      icon: iconsMap['ic-calendar'],
-      screen: 'searchBooking',
-      options: {
-        ...navigatorStyle,
-        topBar: {
-          ...navigatorStyle.topBar,
-          visible: true,
-          drawBehind: true,
-          // noBorder: true,
-          title: {
-            text: 'GENERALS',
-            color: '#FF671B',
-            fontSize: 20
-          }
-        },
-        backButton: {
-          icon: iconsMap['ic-done'],
-          visible: true
-        }
-      }
-    },
-    {
       label: 'history',
       title: 'Lịch sử',
-      icon: iconsMap['ic-history'],
+      icon: iconsMap['ic-set-up-done'],
       screen: 'history',
       options: {
         ...navigatorStyle,

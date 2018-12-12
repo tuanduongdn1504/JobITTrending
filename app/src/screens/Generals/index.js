@@ -14,14 +14,16 @@ import {
 } from '../../utils/textUtils';
 import { Colors, Metrics } from '../../themes';
 import { type, fontWeight } from '../../themes/Fonts';
+import KeyboardAwareScrollViewUI from '../../components/KeyboardAwareScrollView';
 import Text from '../../components/Text';
 import Divider from '../../components/Divider';
 import { iconsMap } from '../../utils/appIcons';
 import PushNotification from '../../PushNotification';
 import OfficeActions from '../../redux/OfficeRedux/actions';
 import BookingActions from '../../redux/BookingRedux/actions';
+import TagCloud from '../../components/TagCloud';
 
-class SearchBooking extends Component {
+class Generals extends Component {
   static options() {
     return {
       topBar: {
@@ -29,7 +31,7 @@ class SearchBooking extends Component {
           {
             icon: iconsMap['ic-quick-time'],
             id: 'history',
-            color: Colors.primary,
+            color: Colors.lightPrimary,
             disableIconTint: false
           }
         ]
@@ -42,6 +44,26 @@ class SearchBooking extends Component {
     super(props);
     Navigation.events().bindComponent(this);
     this.state = {
+      tagList: [
+        { title: 'Item1', point: 0 },
+        { title: 'AngularJS', point: 2 },
+        { title: 'PHP', point: 3 },
+        { title: 'VueJs', point: 2 },
+        { title: 'LongLongItem5', point: 1 },
+        { title: 'Item6', point: 0 },
+        { title: 'NodeJs', point: 4 },
+        { title: 'Item8', point: 0 },
+        { title: 'Item9', point: 1 },
+        { title: 'React-Native', point: 5 }
+      ],
+      colorList: ['#2e3031', 'green', 'blue', 'orange', 'violet', 'red'],
+      minFontSize: 12,
+      style: {
+        height: height / 3,
+        width: width / 1.2,
+        padding: 15
+        // paddingRight: 15
+      },
       average: 0,
       highest: 0
     };
@@ -126,49 +148,17 @@ class SearchBooking extends Component {
   renderTrendingJob = () => {
     // const { numericalRunning } = this.props;
     return (
-      <View style={styles.vButton}>
-        <View style={{ alignItems: 'center' }}>
-          <Text style={[styles.vNumerical]}>Most hired job?</Text>
-          <Text
-            type="largeTitleBold"
-            style={styles.numerical}
-            color={Colors.primaryText}
-          >
-            {/* {`${numericalRunning}`} */}
-            PHP
-          </Text>
-          <Text
-            type="largeTitleBold"
-            style={styles.numerical}
-            color={Colors.primaryText}
-          >
-            {/* {`${numericalRunning}`} */}
-            React-Naive
-          </Text>
-          <Text
-            type="largeTitleBold"
-            style={styles.numerical}
-            color={Colors.primaryText}
-          >
-            {/* {`${numericalRunning}`} */}
-            AngularJS
-          </Text>
-          <Text
-            type="largeTitleBold"
-            style={styles.numerical}
-            color={Colors.primaryText}
-          >
-            {/* {`${numericalRunning}`} */}
-            NodeJs
-          </Text>
-          <Text
-            type="largeTitleBold"
-            style={styles.numerical}
-            color={Colors.primaryText}
-          >
-            {/* {`${numericalRunning}`} */}
-            VueJs
-          </Text>
+      <View>
+        <Text style={[styles.vNumerical]}>Most hired job?</Text>
+        <View style={styles.vButton}>
+          <View style={{ alignItems: 'center' }}>
+            <TagCloud
+              tagList={this.state.tagList}
+              colorList={this.state.colorList}
+              minFontSize={this.state.minFontSize}
+              style={this.state.style}
+            />
+          </View>
         </View>
       </View>
     );
@@ -188,13 +178,17 @@ class SearchBooking extends Component {
       <Container style={styles.container}>
         <CheckUpdate />
         <PushNotification />
-        {this.renderBody()}
+        <KeyboardAwareScrollViewUI
+          style={{ backgroundColor: Colors.secondaryGray }}
+        >
+          {this.renderBody()}
+        </KeyboardAwareScrollViewUI>
       </Container>
     );
   }
 }
 
-const { width } = Dimensions.get('window');
+const { height, width } = Dimensions.get('window');
 
 const styles = StyleSheet.create({
   container: {
@@ -331,4 +325,4 @@ const mapDispatchToProps = dispatch => {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(SearchBooking);
+)(Generals);
