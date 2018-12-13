@@ -205,7 +205,7 @@ class Trending extends Component {
           value={this.state.selectedEntry}
           editable={this.state.isEdit}
         />
-        {/* <LineChart
+        <LineChart
           style={styles.chart}
           data={this.state.data}
           chartDescription={{ text: '' }}
@@ -234,7 +234,7 @@ class Trending extends Component {
           keepPositionOnRotation={false}
           onSelect={this.handleSelect.bind(this)}
           onChange={event => console.log(event.nativeEvent)}
-        /> */}
+        />
         {/* <Text style={[styles.placeholder]}>
           {I18n.t('screens.numberOfSlot').toUpperCase()}
           {`\n(Hiện tại chỉ có thể xử lí cho cá nhân)`}

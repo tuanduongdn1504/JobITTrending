@@ -1,6 +1,10 @@
 {
   "name": "JobITTrending",
   "version": "0.0.1",
+  "description": "A react-native charts support both android and ios.",
+  "author": "wuxudong",
+  "license": "MIT",
+  "homepage": "https://github.com/wuxudong/react-native-charts-wrapper",
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
@@ -10,6 +14,7 @@
     "buildandroid": "cd android && ./gradlew clean && ./gradlew assembleRelease",
     "fix-xcode": "react-native-schemes-manager all",
     "postinstall": "react-native-schemes-manager all && yarn run createIconFont",
+    "postinstall2": "sed -i '' 's/#import <RCTAnimation\\/RCTValueAnimatedNode.h>/#import \"RCTValueAnimatedNode.h\"/' ./node_modules/react-native/Libraries/NativeAnimation/RCTNativeAnimatedNodesManager.h",
     "podInstall": "pod install --repo-update"
   },
   "dependencies": {
