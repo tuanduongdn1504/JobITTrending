@@ -18,7 +18,18 @@ const icons = {
   'ic-quick-done': [20, '#000'],
   'ic-quick-fail': [20, '#000'],
   'ic-send': [20, '#000'],
-  'ic-set-up-done': [20, '#000']
+  'ic-set-up-done': [20, '#000'],
+  adjust: [20, '#000', 'fontAwesome'],
+  bandcamp: [20, '#000', 'fontAwesome'],
+  bitcoin: [20, '#000', 'fontAwesome'],
+  compass: [20, '#000', 'fontAwesome'],
+  copyright: [20, '#000', 'fontAwesome'],
+  codiepie: [20, '#000', 'fontAwesome'],
+  cuttlefish: [20, '#000', 'fontAwesome'],
+  'pause-circle': [25, '#000', 'fontAwesome'],
+  steam: [20, '#000', 'fontAwesome'],
+  'stumbleupon-circle': [25, '#000', 'fontAwesome'],
+  language: [25, '#000', 'fontAwesome']
 };
 
 const iconsMap = {};
