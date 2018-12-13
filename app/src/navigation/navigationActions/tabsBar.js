@@ -32,10 +32,10 @@ export const startWithTabs = () => {
       }
     },
     {
-      label: 'queue',
-      title: 'Đăng kí nhanh',
-      icon: iconsMap['ic-history'],
-      screen: 'queue',
+      label: 'trending',
+      title: 'Trending',
+      icon: iconsMap['stumbleupon-circle'],
+      screen: 'trending',
       options: {
         ...navigatorStyle,
         buttonColor: 'black',
@@ -45,7 +45,7 @@ export const startWithTabs = () => {
           drawBehind: true,
           title: {
             icon: { uri: Images.priceTag },
-            text: 'ĐĂNG KÍ NHANH',
+            text: 'TRENDING',
             color: '#FF671B',
             fontSize: 20
             // fontFamily: Fonts.type.bold
@@ -64,10 +64,10 @@ export const startWithTabs = () => {
       }
     },
     {
-      label: 'booking',
-      title: 'Đặt lịch hẹn',
-      icon: iconsMap['ic-set-time'],
-      screen: 'booking',
+      label: 'comparison',
+      title: 'Comparison',
+      icon: iconsMap['pause-circle'],
+      screen: 'comparison',
       options: {
         ...navigatorStyle,
         topBar: {
@@ -75,7 +75,7 @@ export const startWithTabs = () => {
           visible: true,
           drawBehind: true,
           title: {
-            text: 'ĐẶT LỊCH HẸN',
+            text: 'COMPARISON',
             color: '#FF671B',
             fontSize: 20
           }
@@ -87,10 +87,10 @@ export const startWithTabs = () => {
       }
     },
     {
-      label: 'history',
-      title: 'Lịch sử',
-      icon: iconsMap['ic-set-up-done'],
-      screen: 'history',
+      label: 'jobStatistic',
+      title: 'Job Statistic',
+      icon: iconsMap['steam'],
+      screen: 'jobStatistic',
       options: {
         ...navigatorStyle,
         topBar: {
@@ -98,7 +98,7 @@ export const startWithTabs = () => {
           visible: true,
           drawBehind: true,
           title: {
-            text: 'TRA CỨU',
+            text: 'JOB STATISTIC',
             color: '#FF671B',
             fontSize: 20
           }
@@ -110,29 +110,61 @@ export const startWithTabs = () => {
       }
     },
     {
-      label: 'history',
-      title: 'Thông báo',
-      icon: iconsMap['ic-notification'],
-      screen: 'notification',
+      label: 'booking',
+      title: 'Booking',
+      icon: iconsMap['ic-send'],
+      screen: 'booking',
       options: {
         ...navigatorStyle,
+        buttonColor: 'black',
         topBar: {
           ...navigatorStyle.topBar,
           visible: true,
           drawBehind: true,
           title: {
-            text: 'THÔNG BÁO',
+            icon: { uri: Images.priceTag },
+            text: 'BOOKING',
             color: '#FF671B',
             fontSize: 20
+            // fontFamily: Fonts.type.bold
           }
         },
-        badge: '2',
         backButton: {
-          icon: iconsMap['ic-done'],
+          icon: iconsMap.back,
           visible: true
+        },
+        largeTitle: {
+          visible: true,
+          fontSize: 30,
+          color: 'red',
+          fontFamily: 'Helvetica'
         }
       }
     }
+    // {
+    //   label: 'history',
+    //   title: 'Thông báo',
+    //   icon: iconsMap['ic-notification'],
+    //   screen: 'notification',
+    //   options: {
+    //     ...navigatorStyle,
+    //     topBar: {
+    //       ...navigatorStyle.topBar,
+    //       visible: true,
+    //       drawBehind: true,
+    //       title: {
+    //         text: 'THÔNG BÁO',
+    //         color: '#FF671B',
+    //         fontSize: 20
+    //       }
+    //     },
+    //     badge: '2',
+    //     backButton: {
+    //       icon: iconsMap['ic-done'],
+    //       visible: true
+    //     }
+    //   }
+    // }
   ];
 
   const childrens = Tabs.map(data => ({

@@ -2,7 +2,6 @@
 import React, { Component } from 'react';
 import { StyleSheet, Dimensions, View } from 'react-native';
 import { connect } from 'react-redux';
-import moment from 'moment';
 import CheckUpdate from './CheckUpdate';
 import Container from '../../components/Container';
 import Button from '../../components/Button';
@@ -25,7 +24,6 @@ import { type } from '../../themes/Fonts';
 import Text from '../../components/Text';
 import KeyboardAwareScrollViewUI from '../../components/KeyboardAwareScrollView';
 import Divider from '../../components/Divider';
-import DatePicker from '../../components/DateTimePicker/DateTimePicker';
 import ModalPicker from '../../components/ModalPicker/ModalPicker';
 import AlertMessage from '../../components/AlertMessage/AlertMessageWithRedux';
 
@@ -40,11 +38,6 @@ class BookingDetail extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      date: moment().add(1, 'd'),
-      time: moment()
-        .hour(7)
-        .minutes(30),
-      minuteInterval: 10,
       area: null,
       office: null,
       procedure: null,
@@ -55,7 +48,6 @@ class BookingDetail extends Component {
 
   componentDidMount() {
     this.onRefresh();
-    this.setState({ minuteInterval: 10 });
   }
 
   onRefresh = e => {
@@ -77,19 +69,14 @@ class BookingDetail extends Component {
   };
 
   submitData = () => {
-    const { procedure, date, time } = this.state;
+    const { procedure } = this.state;
     if (procedure !== null) {
-      const data = {
-        officeId: procedure.officeId,
-        procedureId: procedure.id,
-        date,
-        timeFrame: 1 // dummy
-      };
-      this.props.bookingTimer(data);
+      const data = { officeId: 1, procedureId: procedure.id };
+      this.props.bookingNow(data);
     } else
       showInAppNoti(
         'ERROR',
-        'Hãy chọn đầy đủ nội dung trước khi đặt!',
+        'Hãy chọn đầy đủ nội dung trước khi lấy số!',
         'error'
       );
   };
@@ -130,45 +117,6 @@ class BookingDetail extends Component {
           }
           selectTextStyle={this.state.office && { color: Colors.primaryText }}
         />
-        <View style={{ flexDirection: 'row' }}>
-          <View>
-            <Text style={[styles.placeholder]}>
-              {I18n.t('screens.selectedDate')}
-            </Text>
-            <DatePicker
-              style={{ width: 160 }}
-              date={this.state.date}
-              mode="date"
-              placeholder={I18n.t('screens.selectedDate')}
-              format="DD/MM/YYYY"
-              confirmBtnText="Confirm"
-              cancelBtnText="Cancel"
-              onDateChange={date => {
-                this.setState({ date: date });
-              }}
-              minDate={moment().add(1, 'd')}
-              maxDate={moment().add(13, 'd')}
-            />
-          </View>
-          <View style={{ position: 'absolute', right: 0 }}>
-            <Text style={[styles.placeholder]}>
-              {I18n.t('screens.selectedTime')}
-            </Text>
-            <DatePicker
-              style={{ width: 160 }}
-              date={this.state.time}
-              mode="time"
-              placeholder={I18n.t('screens.selectedTime')}
-              format="HH:mm"
-              confirmBtnText="Confirm"
-              cancelBtnText="Cancel"
-              onDateChange={time => {
-                this.setState({ time: time });
-              }}
-              minuteInterval={10}
-            />
-          </View>
-        </View>
         <Text style={[styles.placeholder]}>
           {I18n.t('screens.inputReason')}
         </Text>
@@ -234,7 +182,7 @@ class BookingDetail extends Component {
       <View style={styles.body}>
         {this.renderInput()}
         {this.renderButtonView()}
-        <View style={{ backgroundColor: Colors.default, height: 100 }} />
+        <View style={{ backgroundColor: Colors.default, height: 180 }} />
       </View>
     );
   }
@@ -250,6 +198,7 @@ class BookingDetail extends Component {
         >
           {this.renderBody()}
         </KeyboardAwareScrollViewUI>
+        {/* <AlertMessage name="submit" />; */}
       </Container>
     );
   }
@@ -323,7 +272,7 @@ function mapStateToProps(state) {
     officeTypes: state.officeTypes,
     offices: state.offices,
     procedures: state.procedures,
-    loading: state.offices.loading,
+    // loading: state.offices.loading,
     loginData: state.login.data
   };
 }
@@ -335,7 +284,7 @@ const mapDispatchToProps = dispatch => {
       dispatch(OfficesActions.fetchOfficesByOfficeTypeId(data)),
     fetchProceduresByOfficeId: data =>
       dispatch(ProceduresActions.fetchProceduresByOfficeId(data)),
-    bookingTimer: data => dispatch(BookingActions.bookingTimer(data)),
+    bookingNow: data => dispatch(BookingActions.bookingNow(data)),
     signOut: () => dispatch(LoginActions.signOut())
   };
 };
