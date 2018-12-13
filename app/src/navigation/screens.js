@@ -14,9 +14,12 @@ import ForgotPassword from '../screens/User/ForgotPassword';
 import ResetPassword from '../screens/User/ResetPassword';
 import VerifyPassword from '../screens/User/VerifyPassword';
 // tabbar
-import Queue from '../screens/Queue';
 import Generals from '../screens/Generals';
-import SelectDepartment from '../screens/Queue/SelectDepartment';
+
+import Trending from '../screens/Trending';
+import Comparison from '../screens/Comparison';
+import ComparisonDetail from '../screens/Comparison/ComparisonDetail';
+import JobStatistic from '../screens/JobStatistic';
 import Booking from '../screens/Booking';
 import BookingDetail from '../screens/Booking/BookingDetail';
 import History from '../screens/History';
@@ -53,14 +56,32 @@ export function registerScreens(store, persistor) {
     store
   );
   Navigation.registerComponentWithRedux(
-    'queue',
-    () => Queue,
+    'generals',
+    () => Generals,
     PersistProvider,
     store
   );
   Navigation.registerComponentWithRedux(
-    'selectDepartment',
-    () => SelectDepartment,
+    'trending',
+    () => Trending,
+    PersistProvider,
+    store
+  );
+  Navigation.registerComponentWithRedux(
+    'comparison',
+    () => Comparison,
+    PersistProvider,
+    store
+  );
+  Navigation.registerComponentWithRedux(
+    'comparisonDetail',
+    () => ComparisonDetail,
+    PersistProvider,
+    store
+  );
+  Navigation.registerComponentWithRedux(
+    'jobStatistic',
+    () => JobStatistic,
     PersistProvider,
     store
   );
@@ -116,12 +137,6 @@ export function registerScreens(store, persistor) {
   Navigation.registerComponent(
     'inAppNotification',
     () => InAppNotification,
-    PersistProvider,
-    store
-  );
-  Navigation.registerComponentWithRedux(
-    'generals',
-    () => Generals,
     PersistProvider,
     store
   );

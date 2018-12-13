@@ -21,7 +21,7 @@ import OpenTime from '../../components/OpeningTime';
 import { back } from '../../navigation/navigationButtons';
 import { iconsMap } from '../../utils/appIcons';
 
-class Queue extends Component {
+class Comparison extends Component {
   static options() {
     return {
       topBar: {
@@ -75,7 +75,7 @@ class Queue extends Component {
   }
   submitData = () => {
     const { componentId } = this.props;
-    push(componentId, 'selectDepartment', {
+    push(componentId, 'comparisonDetail', {
       // title: 'Đăng kí nhanh',
       passProps: {
         numberOfTrades: this.state.numberOfTrades
@@ -295,4 +295,4 @@ const mapDispatchToProps = dispatch => {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(Queue);
+)(Comparison);

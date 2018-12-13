@@ -27,7 +27,7 @@ import Divider from '../../components/Divider';
 import ModalPicker from '../../components/ModalPicker/ModalPicker';
 import AlertMessage from '../../components/AlertMessage/AlertMessageWithRedux';
 
-class SelectDepartment extends Component {
+class ComparisonDetail extends Component {
   static options() {
     return {
       topBar: {}
@@ -292,4 +292,4 @@ const mapDispatchToProps = dispatch => {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(SelectDepartment);
+)(ComparisonDetail);
