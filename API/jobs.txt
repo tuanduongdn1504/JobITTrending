@@ -1,0 +1,113 @@
+AJAX
+Angularjs
+Angular
+Bootstrap
+CSS
+Frontend
+Full Stack
+HTML
+JavaScript
+jQuery
+React
+User Experience
+Web Development
+ASP.NET
+Backend
+C#
+Java
+Node
+PHP
+Ruby on Rails
+Scala
+Service oriented architecture
+Web Applications
+Web Services
+C++
+Eclipse
+Erlang
+F#
+Golang
+J2EE
+Open Source
+Perl
+Python
+Ruby
+Spring
+Android
+iOS
+Mobile
+Objective-C
+Xamarin
+.NET
+ASP
+GitHub
+VB.NET
+Data Quality
+Debugging
+Selenium
+Test Driven Development
+Testing Automation
+Unit Testing
+Blogging
+CMS
+E-commerce
+Google Analytics
+Intranet
+Wordpress
+Data Center
+Database Administration
+Database Servers
+DevOps
+IT Operations
+jQuery
+Linux
+Operating Systems
+Oracle
+Server Administration
+System Administration
+Technical Support
+Analytics
+Big Data
+Data Analysis
+Database
+Machine Learning
+Natural Language Processing 
+Statistics
+Spark
+SQL
+Business Analysis
+Business Process Modelling
+Computer Science
+Data Structures
+Embedded Systems
+IT Management
+IT Service Management
+IT Strategy
+Object Oriented Design
+Product Development
+Project Management
+Project Manager
+Requirement Analysis
+Software architecture
+Software Design
+Software Development
+Software Engineering
+Solution Architecture
+System Architecture
+ERP
+.Net
+Game
+Fullstack
+UIUX
+Project Manager
+IT Manager
+Tester
+QA
+Quality Assurance
+Testing Engineer
+Business Analyst
+UX Designer
+UI Designer
+BrSE
+Security
+
