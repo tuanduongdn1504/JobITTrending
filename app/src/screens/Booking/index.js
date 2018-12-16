@@ -177,7 +177,7 @@ class Booking extends Component {
     return (
       <View style={styles.header}>
         <Text style={styles.title} type="headline">
-          {I18n.t('screens.inputProfile')}
+          INPUT INFORMATION
         </Text>
         <View style={styles.vDescription}>
           <View style={styles.description}>
@@ -217,7 +217,7 @@ const { width, height } = Dimensions.get('window');
 
 const styles = StyleSheet.create({
   container: {
-    paddingTop: 50
+    paddingTop: 80
   },
   header: {
     width: '100%',

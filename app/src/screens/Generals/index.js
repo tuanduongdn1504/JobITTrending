@@ -64,8 +64,8 @@ class Generals extends Component {
         padding: 15
         // paddingRight: 15
       },
-      average: 0,
-      highest: 0
+      average: 1300,
+      highest: 2500
     };
     this.numerical = React.createRef();
   }

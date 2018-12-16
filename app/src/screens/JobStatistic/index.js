@@ -54,7 +54,7 @@ class JobStatistic extends Component {
     this.state = {
       // numberOfTrades: '1',
       // isEdit: false,
-      area: null,
+      language: null,
       office: null,
       procedure: null,
       numberOfTrades: this.props.numberOfTrades,
@@ -214,38 +214,17 @@ class JobStatistic extends Component {
   renderInput = () => {
     return (
       <View style={styles.vInput}>
-        <Text style={[styles.placeholder]}>{I18n.t('screens.area')}</Text>
-        {/* <ModalPicker
-          data={officeTypes.officeTypesData}
+        <Text style={[styles.placeholder]}>Selected Job</Text>
+        <ModalPicker
+          data={this.props.language}
           animationType="fade"
-          initValue="Bạn có thể chọn UBND"
+          initValue="Bạn có thể chọn Job"
           onChange={option => {
-            this.setState({ area: option, office: null, procedure: null });
-            this.props.fetchOfficesByOfficeTypeId({ OfficeTypeId: option.id });
+            this.setState({ language: option });
+            // this.props.fetchOfficesByOfficeTypeId({ OfficeTypeId: option.id });
           }}
-          selectTextStyle={this.state.area && { color: Colors.primaryText }}
-        /> */}
-        <Text style={[styles.placeholder]}>{I18n.t('screens.department')}</Text>
-        {/* <ModalPicker
-          data={offices.officesData}
-          animationType="fade"
-          initValue={
-            !this.state.area
-              ? 'Hãy chọn UBND ở trên!'
-              : 'Bạn có thể chọn Cơ quan'
-          }
-          onChange={option => {
-            this.setState({ office: option, procedure: null });
-            this.props.fetchProceduresByOfficeId({ OfficeId: option.id });
-          }}
-          isDisable={!this.state.area}
-          selectStyle={
-            !this.state.area && {
-              backgroundColor: Colors.backgroundNavGradient
-            }
-          }
-          selectTextStyle={this.state.office && { color: Colors.primaryText }}
-        /> */}
+          selectTextStyle={this.state.language && { color: Colors.primaryText }}
+        />
         {/* <LineChart
           style={styles.chart}
           data={this.state.data}
@@ -308,7 +287,7 @@ class JobStatistic extends Component {
             startColor="transparent"
             endColor="transparent"
             style={styles.button}
-            onPress={this.onPressLearnMore.bind(this)}
+            // onPress={this.onPressLearnMore.bind(this)}
             buttonTitle={I18n.t('button.next').toLocaleUpperCase()}
           />
           <Text
@@ -324,7 +303,7 @@ class JobStatistic extends Component {
     return (
       <View style={styles.header}>
         <Text style={styles.title} type="headline">
-          {I18n.t('screens.inputProfile')}
+          STATISTIC ABOUT JOB
         </Text>
         <View style={styles.vDescription}>
           <View style={styles.description}>
@@ -365,7 +344,7 @@ const { width, height } = Dimensions.get('window');
 
 const styles = StyleSheet.create({
   container: {
-    paddingTop: 50
+    paddingTop: 80
   },
   header: {
     width: '100%',
@@ -426,6 +405,18 @@ const styles = StyleSheet.create({
 
 function mapStateToProps(state) {
   return {
+    language: [
+      { name: 'React-Native', salary: 2000, location: 'HCM' },
+      { name: 'PHP', salary: 2000, location: 'HCM' },
+      { name: 'AngularJs', salary: 2000, location: 'HCM' },
+      { name: 'Swift', salary: 2000, location: 'HCM' },
+      { name: 'Android', salary: 2000, location: 'HCM' },
+      { name: 'Python', salary: 2000, location: 'HCM' },
+      { name: '.Net', salary: 2000, location: 'HCM' },
+      { name: 'Machine Learning', salary: 2000, location: 'HCM' },
+      { name: 'Swift', salary: 2000, location: 'HCM' },
+      { name: 'Tester', salary: 2000, location: 'HCM' }
+    ],
     userName: state.login.data && state.login.data.fullName,
     userEmail: state.login.data && state.login.data.email,
     userPhoneNumber: state.login.data && state.login.data.phoneNumber,

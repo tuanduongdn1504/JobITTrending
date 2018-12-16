@@ -267,7 +267,7 @@ class Trending extends Component {
             startColor="transparent"
             endColor="transparent"
             style={styles.button}
-            onPress={this.onPressLearnMore.bind(this)}
+            // onPress={this.onPressLearnMore.bind(this)}
             buttonTitle={I18n.t('button.next').toLocaleUpperCase()}
           />
           <Text
@@ -283,7 +283,7 @@ class Trending extends Component {
     return (
       <View style={styles.header}>
         <Text style={styles.title} type="headline">
-          {I18n.t('screens.inputProfile')}
+          CHART FOR TRENDING
         </Text>
         <View style={styles.vDescription}>
           <View style={styles.description}>
@@ -323,7 +323,7 @@ const { width, height } = Dimensions.get('window');
 
 const styles = StyleSheet.create({
   container: {
-    paddingTop: 50
+    paddingTop: 80
   },
   header: {
     width: '100%',

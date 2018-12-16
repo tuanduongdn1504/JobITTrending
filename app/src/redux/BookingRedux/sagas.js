@@ -49,7 +49,11 @@ export function* bookingNowSaga({ data }) {
   try {
     const response = yield call(apiWrapper, true, bookingNow, data);
     yield put(Actions.bookingNowSuccess(response));
-    showInAppNoti('SỐ THỨ TỰ CỦA BẠN:', `${response.numerical}`, 'success');
+    showInAppNoti(
+      'Mã cuộc hẹn của bạn là:',
+      `${response.numerical} ('chúng tôi sẽ liên lạc bạn sau')`,
+      'success'
+    );
   } catch (error) {
     console.log('errror', error);
   }

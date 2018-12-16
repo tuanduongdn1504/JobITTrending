@@ -20,6 +20,7 @@ import InputBordered from '../../components/InputBordered';
 import OpenTime from '../../components/OpeningTime';
 import { back } from '../../navigation/navigationButtons';
 import { iconsMap } from '../../utils/appIcons';
+import ModalPicker from '../../components/ModalPicker/ModalPicker';
 
 class Comparison extends Component {
   static options() {
@@ -43,7 +44,9 @@ class Comparison extends Component {
     Navigation.events().bindComponent(this);
     this.state = {
       numberOfTrades: '1',
-      isEdit: false
+      isEdit: false,
+      language: null,
+      company: null
     };
   }
   navigationButtonPressed({ buttonId }) {
@@ -88,46 +91,39 @@ class Comparison extends Component {
   };
 
   renderInput = () => {
+    const { language, company } = this.props;
     return (
       <View style={styles.vInput}>
-        <InputBordered
-          ref={ref => {
-            this.fullName = ref;
+        <Text style={[styles.placeholder]}>Job Title</Text>
+        <ModalPicker
+          data={language} // dummy
+          animationType="fade"
+          initValue="Bạn có thể chọn Job Title"
+          onChange={option => {
+            this.setState({ language: option, company: null });
+            // this.props.fetchOfficesByOfficeTypeId({ company: option.id });
           }}
-          returnKeyType="next"
-          onSubmitEditing={() => this.focusNextField('email')}
-          style={{ flex: 1 }}
-          placeholder={I18n.t('userInfo.name').toUpperCase()}
-          value={this.props.userName}
-          editable={this.state.isEdit}
+          selectTextStyle={this.state.language && { color: Colors.primaryText }}
         />
-        <InputBordered
-          ref={ref => {
-            this.email = ref;
+        <Text style={[styles.placeholder]}>Company Name</Text>
+        <ModalPicker
+          data={company} // dummy
+          animationType="fade"
+          initValue={
+            !this.state.language
+              ? 'Hãy chọn Job Title ở trên!'
+              : 'Bạn có thể chọn Company'
+          }
+          onChange={option => {
+            this.setState({ company: option });
           }}
-          returnKeyType="next"
-          keyboardType="email-address"
-          validateType="email"
-          validateMessage={I18n.t('error.email')}
-          onSubmitEditing={() => this.focusNextField('phoneNumber')}
-          placeholderTextColor={Colors.placeholderText}
-          placeholder={I18n.t('userInfo.email').toUpperCase()}
-          value={this.props.userEmail}
-          editable={this.state.isEdit}
-        />
-        <InputBordered
-          ref={ref => {
-            this.phoneNumber = ref;
-          }}
-          returnKeyType="next"
-          keyboardType="phone-pad"
-          validateType="number"
-          validateMessage={I18n.t('error.phoneNumber')}
-          onSubmitEditing={() => this.focusNextField('phoneNumber')}
-          placeholderTextColor={Colors.placeholderText}
-          placeholder={I18n.t('userInfo.phone').toUpperCase()}
-          value={this.props.userPhoneNumber}
-          editable={this.state.isEdit}
+          isDisable={!this.state.language}
+          selectStyle={
+            !this.state.language && {
+              backgroundColor: Colors.backgroundNavGradient
+            }
+          }
+          selectTextStyle={this.state.company && { color: Colors.primaryText }}
         />
         {/* <Text style={[styles.placeholder]}>
           {I18n.t('screens.numberOfSlot').toUpperCase()}
@@ -161,7 +157,7 @@ class Comparison extends Component {
             startColor="transparent"
             endColor="transparent"
             style={styles.button}
-            onPress={this.submitData}
+            onPress={this.state.company && this.submitData}
             buttonTitle={I18n.t('button.next').toLocaleUpperCase()}
           />
           <Text
@@ -177,7 +173,7 @@ class Comparison extends Component {
     return (
       <View style={styles.header}>
         <Text style={styles.title} type="headline">
-          {I18n.t('screens.inputProfile')}
+          SELECT TWO COMPANY
         </Text>
         <View style={styles.vDescription}>
           <View style={styles.description}>
@@ -217,7 +213,7 @@ const { width, height } = Dimensions.get('window');
 
 const styles = StyleSheet.create({
   container: {
-    paddingTop: 50
+    paddingTop: 80
   },
   header: {
     width: '100%',
@@ -278,6 +274,26 @@ const styles = StyleSheet.create({
 
 function mapStateToProps(state) {
   return {
+    language: [
+      { name: 'ENOUVO IT SOLUTIONS', salary: 1000, location: 'danang' },
+      { name: 'BAP', salary: 1000, location: 'danang' },
+      { name: 'Green Global', salary: 1000, location: 'danang' },
+      { name: 'CES', salary: 1000, location: 'danang' },
+      { name: 'IOT', salary: 1000, location: 'danang' },
+      { name: 'MGM', salary: 1000, location: 'danang' },
+      { name: 'Axon active', salary: 1000, location: 'danang' },
+      { name: 'DAC', salary: 1000, location: 'danang' }
+    ],
+    company: [
+      { name: 'ENOUVO IT SOLUTIONS', salary: 1000, location: 'danang' },
+      { name: 'BAP', salary: 1000, location: 'danang' },
+      { name: 'Green Global', salary: 1000, location: 'danang' },
+      { name: 'CES', salary: 1000, location: 'danang' },
+      { name: 'IOT', salary: 1000, location: 'danang' },
+      { name: 'MGM', salary: 1000, location: 'danang' },
+      { name: 'Axon active', salary: 1000, location: 'danang' },
+      { name: 'DAC', salary: 1000, location: 'danang' }
+    ],
     userName: state.login.data && state.login.data.fullName,
     userEmail: state.login.data && state.login.data.email,
     userPhoneNumber: state.login.data && state.login.data.phoneNumber,

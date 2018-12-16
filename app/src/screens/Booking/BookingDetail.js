@@ -41,7 +41,9 @@ class BookingDetail extends Component {
       area: null,
       office: null,
       procedure: null,
-      numberOfTrades: this.props.numberOfTrades
+      numberOfTrades: this.props.numberOfTrades,
+      language: null,
+      company: null
     };
     this.reason = React.createRef();
   }
@@ -69,9 +71,9 @@ class BookingDetail extends Component {
   };
 
   submitData = () => {
-    const { procedure } = this.state;
-    if (procedure !== null) {
-      const data = { officeId: 1, procedureId: procedure.id };
+    const { procedure, company } = this.state;
+    if (company !== null) {
+      const data = { officeId: 1, procedureId: 2 };
       this.props.bookingNow(data);
     } else
       showInAppNoti(
@@ -82,65 +84,48 @@ class BookingDetail extends Component {
   };
 
   renderInput = () => {
-    const { offices, officeTypes, procedures } = this.props;
+    const { language, company } = this.props;
     return (
       <View style={styles.vInput}>
-        <Text style={[styles.placeholder]}>{I18n.t('screens.area')}</Text>
+        <Text style={[styles.placeholder]}>Job Title</Text>
         <ModalPicker
-          data={officeTypes.officeTypesData}
+          data={language} // dummy
           animationType="fade"
-          initValue="Bạn có thể chọn UBND"
+          initValue="Bạn có thể chọn Job Title"
           onChange={option => {
-            this.setState({ area: option, office: null, procedure: null });
-            this.props.fetchOfficesByOfficeTypeId({ OfficeTypeId: option.id });
+            this.setState({ language: option, company: null });
+            // this.props.fetchOfficesByOfficeTypeId({ company: option.id });
           }}
-          selectTextStyle={this.state.area && { color: Colors.primaryText }}
+          selectTextStyle={this.state.language && { color: Colors.primaryText }}
         />
-        <Text style={[styles.placeholder]}>{I18n.t('screens.department')}</Text>
+        <Text style={[styles.placeholder]}>Company Name</Text>
         <ModalPicker
-          data={offices.officesData}
+          data={company} // dummy
           animationType="fade"
           initValue={
-            !this.state.area
-              ? 'Hãy chọn UBND ở trên!'
-              : 'Bạn có thể chọn Cơ quan'
+            !this.state.language
+              ? 'Hãy chọn Job Title ở trên!'
+              : 'Bạn có thể chọn Company'
           }
           onChange={option => {
-            this.setState({ office: option, procedure: null });
-            this.props.fetchProceduresByOfficeId({ OfficeId: option.id });
+            this.setState({ company: option });
           }}
-          isDisable={!this.state.area}
+          isDisable={!this.state.language}
           selectStyle={
-            !this.state.area && {
+            !this.state.language && {
               backgroundColor: Colors.backgroundNavGradient
             }
           }
-          selectTextStyle={this.state.office && { color: Colors.primaryText }}
+          selectTextStyle={this.state.company && { color: Colors.primaryText }}
         />
-        <Text style={[styles.placeholder]}>
-          {I18n.t('screens.inputReason')}
+        {/* <Text style={[styles.placeholder]}>
+          {I18n.t('screens.numberOfSlot').toUpperCase()}
+          {`\n(Hiện tại chỉ có thể xử lí cho cá nhân)`}
         </Text>
-        <ModalPicker
-          data={procedures.proceduresData}
-          animationType="fade"
-          initValue={
-            !this.state.office
-              ? 'Hãy chọn Cơ quan ở trên!'
-              : 'Bạn có thể chọn Thủ tục'
-          }
-          onChange={option => {
-            this.setState({ procedure: option });
-          }}
-          isDisable={!this.state.office}
-          selectStyle={
-            !this.state.office && {
-              backgroundColor: Colors.backgroundNavGradient
-            }
-          }
-          selectTextStyle={
-            this.state.procedure && { color: Colors.primaryText }
-          }
-        />
+        <OpenTime
+          passData={this.state.numberOfTrades}
+          passFunction={this.getData}
+        /> */}
       </View>
     );
   };
@@ -167,7 +152,7 @@ class BookingDetail extends Component {
     return (
       <View style={styles.header}>
         <Text style={styles.title} type="headline">
-          {I18n.t('screens.bookingAppointment')}
+          INPUT APPLY CONTENT
         </Text>
         <View style={styles.vDescription}>
           <View style={styles.description}>
@@ -269,6 +254,28 @@ const styles = StyleSheet.create({
 
 function mapStateToProps(state) {
   return {
+    language: [
+      { name: 'React-Native', salary: 2000, location: 'HCM' },
+      { name: 'PHP', salary: 2000, location: 'HCM' },
+      { name: 'AngularJs', salary: 2000, location: 'HCM' },
+      { name: 'Swift', salary: 2000, location: 'HCM' },
+      { name: 'Android', salary: 2000, location: 'HCM' },
+      { name: 'Python', salary: 2000, location: 'HCM' },
+      { name: '.Net', salary: 2000, location: 'HCM' },
+      { name: 'Machine Learning', salary: 2000, location: 'HCM' },
+      { name: 'Swift', salary: 2000, location: 'HCM' },
+      { name: 'Tester', salary: 2000, location: 'HCM' }
+    ],
+    company: [
+      { name: 'ENOUVO IT SOLUTIONS', salary: 1000, location: 'danang' },
+      { name: 'BAP', salary: 1000, location: 'danang' },
+      { name: 'Green Global', salary: 1000, location: 'danang' },
+      { name: 'CES', salary: 1000, location: 'danang' },
+      { name: 'IOT', salary: 1000, location: 'danang' },
+      { name: 'MGM', salary: 1000, location: 'danang' },
+      { name: 'Axon active', salary: 1000, location: 'danang' },
+      { name: 'DAC', salary: 1000, location: 'danang' }
+    ],
     officeTypes: state.officeTypes,
     offices: state.offices,
     procedures: state.procedures,

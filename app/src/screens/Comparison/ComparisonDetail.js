@@ -19,7 +19,7 @@ import OfficeTypesActions from '../../redux/OfficeTypeRedux/actions';
 import ProceduresActions from '../../redux/ProcedureRedux/actions';
 import LoginActions from '../../redux/LoginRedux/actions';
 import BookingActions from '../../redux/BookingRedux/actions';
-import { Colors } from '../../themes';
+import { Colors, Metrics } from '../../themes';
 import { type } from '../../themes/Fonts';
 import Text from '../../components/Text';
 import KeyboardAwareScrollViewUI from '../../components/KeyboardAwareScrollView';
@@ -38,10 +38,12 @@ class ComparisonDetail extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      area: null,
-      office: null,
-      procedure: null,
-      numberOfTrades: this.props.numberOfTrades
+      jobOne: 'ENOUVO IT SOLUTIONS',
+      jobTwo: 'IOT',
+      salaryOne: '1500',
+      locationOne: 'Danang',
+      salaryTwo: '1000',
+      locationTwo: 'HaNoi'
     };
     this.reason = React.createRef();
   }
@@ -84,63 +86,30 @@ class ComparisonDetail extends Component {
   renderInput = () => {
     const { offices, officeTypes, procedures } = this.props;
     return (
-      <View style={styles.vInput}>
-        <Text style={[styles.placeholder]}>{I18n.t('screens.area')}</Text>
-        <ModalPicker
-          data={officeTypes.officeTypesData}
-          animationType="fade"
-          initValue="Bạn có thể chọn UBND"
-          onChange={option => {
-            this.setState({ area: option, office: null, procedure: null });
-            this.props.fetchOfficesByOfficeTypeId({ OfficeTypeId: option.id });
-          }}
-          selectTextStyle={this.state.area && { color: Colors.primaryText }}
-        />
-        <Text style={[styles.placeholder]}>{I18n.t('screens.department')}</Text>
-        <ModalPicker
-          data={offices.officesData}
-          animationType="fade"
-          initValue={
-            !this.state.area
-              ? 'Hãy chọn UBND ở trên!'
-              : 'Bạn có thể chọn Cơ quan'
-          }
-          onChange={option => {
-            this.setState({ office: option, procedure: null });
-            this.props.fetchProceduresByOfficeId({ OfficeId: option.id });
-          }}
-          isDisable={!this.state.area}
-          selectStyle={
-            !this.state.area && {
-              backgroundColor: Colors.backgroundNavGradient
-            }
-          }
-          selectTextStyle={this.state.office && { color: Colors.primaryText }}
-        />
-        <Text style={[styles.placeholder]}>
-          {I18n.t('screens.inputReason')}
-        </Text>
-        <ModalPicker
-          data={procedures.proceduresData}
-          animationType="fade"
-          initValue={
-            !this.state.office
-              ? 'Hãy chọn Cơ quan ở trên!'
-              : 'Bạn có thể chọn Thủ tục'
-          }
-          onChange={option => {
-            this.setState({ procedure: option });
-          }}
-          isDisable={!this.state.office}
-          selectStyle={
-            !this.state.office && {
-              backgroundColor: Colors.backgroundNavGradient
-            }
-          }
-          selectTextStyle={
-            this.state.procedure && { color: Colors.primaryText }
-          }
-        />
+      <View style={styles.bookingInfoContainer}>
+        <View style={styles.subContainer}>
+          <Text style={styles.textTitleBooking} numberOfLines={2}>
+            {this.state.jobOne.toLocaleUpperCase()}
+          </Text>
+          <Text type="largeTitle" style={styles.subTextTitle}>
+            {this.state.salaryOne}$
+          </Text>
+          <Text type="largeTitle" style={styles.subTextTitle}>
+            {this.state.locationOne}
+          </Text>
+        </View>
+        <View style={styles.bookingDivider} />
+        <View style={styles.subContainer}>
+          <Text style={styles.textTitleBooking} numberOfLines={2}>
+            {this.state.jobTwo.toLocaleUpperCase()}
+          </Text>
+          <Text type="largeTitle" style={styles.subTextTitle}>
+            {this.state.salaryTwo}$
+          </Text>
+          <Text type="largeTitle" style={styles.subTextTitle}>
+            {this.state.locationTwo}
+          </Text>
+        </View>
       </View>
     );
   };
@@ -167,7 +136,7 @@ class ComparisonDetail extends Component {
     return (
       <View style={styles.header}>
         <Text style={styles.title} type="headline">
-          {I18n.t('screens.bookingAppointment')}
+          OVERVIEW OF COMPARISON
         </Text>
         <View style={styles.vDescription}>
           <View style={styles.description}>
@@ -181,7 +150,7 @@ class ComparisonDetail extends Component {
     return (
       <View style={styles.body}>
         {this.renderInput()}
-        {this.renderButtonView()}
+        {/* {this.renderButtonView()} */}
         <View style={{ backgroundColor: Colors.default, height: 180 }} />
       </View>
     );
@@ -264,7 +233,41 @@ const styles = StyleSheet.create({
   },
   btn: {
     margin: 20
-  }
+  },
+  bookingInfoContainer: {
+    width: Metrics.screenWidth * 0.92,
+    height: 200,
+    flexDirection: 'row',
+    marginTop: 30,
+    borderRadius: 4,
+    alignSelf: 'center',
+    backgroundColor: '#ffffff',
+    shadowColor: 'rgba(0, 0, 0, 0.07)',
+    shadowOffset: {
+      width: 0,
+      height: 3
+    },
+    shadowRadius: 6,
+    shadowOpacity: 1
+  },
+  subContainer: {
+    flex: 1,
+    backgroundColor: 'white',
+    justifyContent: 'center'
+  },
+  textTitleBooking: {
+    paddingHorizontal: 5,
+    textAlign: 'center',
+    paddingTop: 8,
+    fontWeight: 'bold'
+  },
+  subTextTitle: {
+    textAlign: 'center',
+    paddingTop: 20,
+    fontWeight: 'bold',
+    color: Colors.primary
+  },
+  bookingDivider: { width: 1, backgroundColor: '#000', marginVertical: 10 }
 });
 
 function mapStateToProps(state) {
